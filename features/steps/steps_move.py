@@ -17,4 +17,5 @@ def step_impl(context, i):
 
 @Then('the player should move to {np:d}')
 def step_impl(context, np):
-    #TODO
+    new_position = context.player.move(context.i)
+    assert new_position == np
