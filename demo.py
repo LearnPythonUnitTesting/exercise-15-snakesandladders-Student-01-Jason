@@ -30,7 +30,7 @@ class Player:
         self.position = position
 
     def dice(self):
-        return random.randint(1, 6)
+        return random.randint(1, 6) 
 
     def move(self, step):
         self.position += step
